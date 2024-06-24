@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body {
+    background: linear-gradient(135deg, #f9f9f9 0%, #e0f7fa 100%);
+    padding: 15px 0;
+    color: #333;
+}
+
+.container {
+    padding: 30px 9%;
+    padding-bottom: 100px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.container .heading {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #00bcd4;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .box-container .box img {
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.container .box-container .box img:hover {
+    transform: scale(1.1);
+}
+
+.container .box-container .box h3 {
+    color: #333;
+    font-size: 1.8em;
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+.container .box-container .box p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.container .box-container .box .btn {
+    margin-top: 15px;
+    display: inline-block;
+    background: #00bcd4;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.container .box-container .box .btn:hover {
+    background: #0097a7;
+    transform: translateY(-3px);
+}
+
+.container .box-container .box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container .heading {
+        font-size: 2.5em;
+    }
+}

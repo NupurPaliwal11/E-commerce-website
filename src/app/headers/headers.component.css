@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f9f9f9 0%, #e0f7fa 100%);
+    color: #333;
+}
+
+.container {
+    padding: 20px 0;
+    padding-left: 100px;
+    background-color: #e0f7fa;
+    border-bottom: 4px solid #00bcd4;
+    display: flex;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 0;
+    padding: 0;
+    color: #00bcd4;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-search input {
+    height: 34px;
+    width: 300px;
+    padding-left: 1rem;
+    border: 1px solid #00bcd4;
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+    color: #333;
+}
+
+.nav-search button {
+    height: 36px;
+    width: 70px;
+    cursor: pointer;
+    background: #00bcd4;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.nav-search button:hover {
+    background: #0097a7;
+}
+
+.list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.list ul {
+    display: flex;
+    gap: 20px;
+}
+
+.list ul li {
+    list-style: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #00bcd4;
+    transition: color 0.3s;
+}
+
+.list ul li:hover {
+    color: #00796b;
+}
+
+.dropdown-content {
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
+.header {
+    cursor: pointer;
+}
+
+.suggested-result {
+    position: absolute;
+    top: 65px;
+    z-index: 10;
+    display: list-item !important;
+    background-color: #fff;
+    width: 400px;
+    list-style: none;
+    color: #333;
+    padding-left: 19px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.suggested-result li {
+    border-bottom: solid 1px #e0e0e0;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.suggested-result li:hover {
+    background-color: #f0f0f0;
+}
